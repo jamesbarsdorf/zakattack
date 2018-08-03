@@ -11,6 +11,6 @@ app.get('/Your', function(req, res){
   res.send('Mom!');
 });
 
-app.listen(4000, function(){
+app.listen(process.env.PORT || 4000, function(){
   console.log('app is listening on port 4000');
 });
